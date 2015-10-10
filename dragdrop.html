@@ -45,17 +45,16 @@
   }
 
   #bin {
-    background: url(images/bin.jpg) top right no-repeat;
+    background: url(img/lixeira-vazia.png) top right no-repeat;
     height: 250px;
     width: 166px;
     float: left;
-    border: 5px solid #000;
     position: relative;
     margin-top: 0;
   }
 
   #bin.over {
-    background: url(images/bin.jpg) top left no-repeat;
+    background: url(img/lixeira-cheia.png) top left no-repeat;
   }
 
   #bin p {
@@ -114,6 +113,7 @@ var addEvent = (function () {
   var yum = document.createElement('p');
   var msie = /*@cc_on!@*/0;
   yum.style.opacity = 1;
+
 
   var links = document.querySelectorAll('li > a'), el = null;
   for (var i = 0; i < links.length; i++) {
