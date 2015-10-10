@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Formulário CPF</title>
+  <title>Formulário CPF Validar</title>
   <meta charset="utf-8">
   <script src="cpf.js"></script>
   <script>
-  function vCPF(input){
-    input.setCustomValidity(validaCPF(i.value)?'':'CPF Inválido')
+  function vCPF(i){
+    i.setCustomValidity(validaCPF(i.value) ? "" : "CPF Inválido");
   }
   </script>
 </head>
 <body>
 <form>
   <label for="CEP">CEP:
-    <input name="CEP" id="CEP" required pattern="\d{5}-?\d{3}" onchange="javascript:console.log('change')" oninput="javascript:console.log('input')" />
+    <input name="CEP" id="CEP" oninput="vCPF(this)" />
   </label>
-  <input type="submit" value="Enviar" formnovalidate />
+  <input type="submit" value="Enviar" />
 </form>
 </body>
 </html> 
