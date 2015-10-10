@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Formulário</title>
+  <title>Formulário CPF</title>
   <meta charset="utf-8">
+  <script src="cpf.js"></script>
+  <script>
+  function vCPF(input){
+    input.setCustomValidity(validaCPF(i.value)?'':'CPF Inválido')
+  }
+  </script>
 </head>
 <body>
 <form>
