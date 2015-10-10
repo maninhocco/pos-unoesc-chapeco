@@ -3,17 +3,17 @@
 <head>
   <title>Formulário CPF Validar</title>
   <meta charset="utf-8">
-  <script src="cpf.js"></script>
+  <script src="cnpj.js"></script>
   <script>
-  function vCPF(i){
-    i.setCustomValidity(validaCPF(i.value) ? "" : "CPF Inválido");
+  function vCNPJ(i){
+    i.setCustomValidity(validarCNPJ(i.value) ? "" : "CNPJ Inválido");
   }
   </script>
 </head>
 <body>
 <form>
-  <label for="CPF">CPF:
-    <input name="CPF" id="CPF" oninput="vCPF(this)" />
+  <label for="CNPJ">CNPJ:
+    <input name="CNPJ" id="CNPJ" oninput="vCNPJ(this)" />
   </label>
   <input type="submit" value="Enviar" />
 </form>
