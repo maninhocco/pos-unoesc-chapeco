@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Seletores HTML5</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+<nav>
+	<ul id="menu-list">
+		<li class="item"><a href=""></a></li>
+    <li class="item"><a href=""></a></li>
+    <li class="item"><a href=""></a></li>
+    <li class="item"><a href=""></a></li>
+	</ul>
+</nav>
+
+<script>
+  //var item = document.getElementByClassName("item");
+
+  function adicionaItem(valor){
+    document.getElementById("menu-list").innerHTML += "<li>" + valor + "</li>";
+  }
+
+  adicionaItem("opa");
+
+</script>
+
+</body>
+</html>
